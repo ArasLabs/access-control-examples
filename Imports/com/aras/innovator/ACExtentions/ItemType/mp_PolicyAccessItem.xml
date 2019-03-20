@@ -1,0 +1,162 @@
+﻿<AML>
+ <Item type="ItemType" id="D4E6378D54A3427F89BECDC52A0034D5" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>0</auto_search>
+  <enforce_discovery>1</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <implementation_type>polymorphic</implementation_type>
+  <instance_data>MP_POLICYACCESSITEM</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>0</is_versionable>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>1</show_parameters_tab>
+  <structure_view>tabs off</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>mp_PolicyAccessItem</name>
+  <Relationships>
+   <Item type="Property" id="F28D0C84DD77421D9987FD19A4F18B85" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>boolean</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Is Classified</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>3200</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+    <track_history>0</track_history>
+    <name>is_classified</name>
+   </Item>
+   <Item type="View" id="6853859B361F47DCAADFF82B7938BDDF" action="add">
+    <client>js</client>
+    <related_id keyed_name="mp_PolicyAccessItem" type="Form">BD804A58761244C8ADDE9BAC8643FA87</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>0</show_ssvc>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="Server Event" id="0EFEDCDAED7D4765AF8A3690CF47132B" action="add">
+    <event_version>version_1</event_version>
+    <is_required>1</is_required>
+    <related_id keyed_name="polymorphic_item_onBeforeAdd" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>polymorphic_item_onBeforeAdd</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeAdd</server_event>
+    <sort_order>768</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+   </Item>
+   <Item type="Server Event" id="090017F089F04381883184D5B9E46691" action="add">
+    <event_version>version_1</event_version>
+    <is_required>1</is_required>
+    <related_id keyed_name="polymorphic_item_onBeforeCopy" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>polymorphic_item_onBeforeCopy</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeCopy</server_event>
+    <sort_order>896</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+   </Item>
+   <Item type="Server Event" id="DB89177551554332B5056AE415D618CF" action="add">
+    <event_version>version_1</event_version>
+    <is_required>1</is_required>
+    <related_id keyed_name="polymorphic_item_onBeforeDelete" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>polymorphic_item_onBeforeDelete</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeDelete</server_event>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+   </Item>
+   <Item type="Server Event" id="1CF5AB883E7F46E3B9C19400581A1331" action="add">
+    <event_version>version_1</event_version>
+    <is_required>1</is_required>
+    <related_id keyed_name="polymorphic_item_onBeforeLock" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>polymorphic_item_onBeforeLock</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeLock</server_event>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+   </Item>
+   <Item type="Server Event" id="E1321B092BE34C22880FAC12F787FCBA" action="add">
+    <event_version>version_1</event_version>
+    <is_required>1</is_required>
+    <related_id keyed_name="polymorphic_item_onBeforeUnlock" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>polymorphic_item_onBeforeUnlock</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeUnlock</server_event>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+   </Item>
+   <Item type="Server Event" id="521F8F097FD545019E635EAC0649B100" action="add">
+    <event_version>version_1</event_version>
+    <is_required>1</is_required>
+    <related_id keyed_name="polymorphic_item_onBeforeUpdate" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>polymorphic_item_onBeforeUpdate</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeUpdate</server_event>
+    <sort_order>640</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+   </Item>
+   <Item type="Server Event" id="F7DB83FA81C449369201C0C01A81C161" action="add">
+    <event_version>version_1</event_version>
+    <is_required>1</is_required>
+    <related_id keyed_name="polymorphic_item_onBeforeVersion" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>polymorphic_item_onBeforeVersion</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeVersion</server_event>
+    <sort_order>512</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+ <Item type="ItemType" id="D4E6378D54A3427F89BECDC52A0034D5" action="edit">
+  <Relationships>
+   <Item type="Property" action="edit" where="source_id='D4E6378D54A3427F89BECDC52A0034D5' and name='itemtype'">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="mp_PolicyAccessItem">
+     <Item type="List" action="get" select="id" page="1" pagesize="1">
+      <name>mp_PolicyAccessItem</name>
+     </Item>
+    </data_source>
+    <data_type>list</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">ItemType</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>1</readonly>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="mp_PolicyAccessItem" type="ItemType" name="mp_PolicyAccessItem">D4E6378D54A3427F89BECDC52A0034D5</source_id>
+    <stored_length>64</stored_length>
+    <track_history>0</track_history>
+    <name>itemtype</name>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

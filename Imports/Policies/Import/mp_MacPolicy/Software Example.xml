@@ -1,0 +1,24 @@
+﻿<AML>
+ <Item type="mp_MacPolicy" id="D3C6789689FD4657BB04801EE85CF8B9" action="add">
+  <can_delete>975329169C4F45EE867E8392A08A56F2</can_delete>
+  <can_discover>975329169C4F45EE867E8392A08A56F2</can_discover>
+  <can_get>975329169C4F45EE867E8392A08A56F2</can_get>
+  <can_update>975329169C4F45EE867E8392A08A56F2</can_update>
+  <description>Example to show how you can restrict access based on Classification of part.</description>
+  <name>Software Example</name>
+  <Relationships>
+   <Item type="mp_MacCondition" action="add">
+    <condition_xml><![CDATA[<Item type="qry_QueryDefinition"><Relationships><Item type="qry_QueryItem"><item_type>D4E6378D54A3427F89BECDC52A0034D5</item_type><alias>CurrentItem</alias><ref_id>89B61DF8C9D04FA689BF3C01E934E0D7</ref_id><filter_xml><![CDATA[<condition><or><not><eq><property name="classification"/><constant>Software</constant></eq></not><method_call><method_name>MacPolicy.CurrentUser.IsMemberOf</method_name><params><param><constant>B32BD81D1AD04207BF1E61E39A4E0E13</constant></param></params></method_call></or></condition>]]]]><![CDATA[></filter_xml></Item><Item type="qry_QueryItem"><alias>CurrentUser</alias><item_type>45E899CD2859442982EB22BB2DF683E5</item_type><ref_id>11BB8EB866DB47AC858B39845CACC733</ref_id></Item><Item type="qry_QueryReference"><child_ref_id>89B61DF8C9D04FA689BF3C01E934E0D7</child_ref_id></Item><Item type="qry_QueryReference"><child_ref_id>11BB8EB866DB47AC858B39845CACC733</child_ref_id><parent_ref_id>89B61DF8C9D04FA689BF3C01E934E0D7</parent_ref_id><ref_id>87D239DCABEC4BF5B6C6B1FDDEFD6A0C</ref_id></Item></Relationships></Item>]]></condition_xml>
+    <name>All Employees</name>
+    <ref_id>975329169C4F45EE867E8392A08A56F2</ref_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Software Example" type="mp_MacPolicy">D3C6789689FD4657BB04801EE85CF8B9</source_id>
+   </Item>
+   <Item type="mp_MacPolicyControlledType" action="add">
+    <related_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Software Example" type="mp_MacPolicy">D3C6789689FD4657BB04801EE85CF8B9</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

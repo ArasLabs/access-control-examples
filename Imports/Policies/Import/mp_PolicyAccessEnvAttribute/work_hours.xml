@@ -1,0 +1,8 @@
+﻿<AML>
+ <Item type="mp_PolicyAccessEnvAttribute" id="46F0499BE6714765939A5A470714EFF5" action="add">
+  <description>Returns true if it's within office hours.</description>
+  <get_value_method keyed_name="officeHour" type="Method">E1A2512541E24362A90CE41BB0740713</get_value_method>
+  <type>boolean</type>
+  <name>work_hours</name>
+ </Item>
+</AML>

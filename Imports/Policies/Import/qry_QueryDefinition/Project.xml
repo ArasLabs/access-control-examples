@@ -1,0 +1,126 @@
+﻿<AML>
+ <Item type="qry_QueryDefinition" id="1D506C0648DE4C31B6B98483DD69BDC5" action="add">
+  <name>Project</name>
+  <Relationships>
+   <Item type="qry_QueryItem" id="A06B619D750C40BC9C82D8CD0C8B7FF9" action="add">
+    <item_type keyed_name="Project" type="ItemType" name="Project">02184EDAA80D499CB6EC94B159966DBE</item_type>
+    <ref_id>E46FA23ED3D349EAAF81750245789A47</ref_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</source_id>
+    <alias>Project</alias>
+    <Relationships>
+     <Item type="qry_QueryItemSelectProperty" id="969FBC73E2E8467DB418E014733A1E7E" action="add">
+      <property_name>classification</property_name>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="Project" type="qry_QueryItem">A06B619D750C40BC9C82D8CD0C8B7FF9</source_id>
+     </Item>
+     <Item type="qry_QueryItemSelectProperty" id="DE5F67FC29764DBE8C29A92A1266CD5C" action="add">
+      <property_name>id</property_name>
+      <sort_order>256</sort_order>
+      <source_id keyed_name="Project" type="qry_QueryItem">A06B619D750C40BC9C82D8CD0C8B7FF9</source_id>
+     </Item>
+     <Item type="qry_QueryItemSelectProperty" id="293E42DD0CEE4659B0A21EA75DD49EC8" action="add">
+      <property_name>name</property_name>
+      <sort_order>384</sort_order>
+      <source_id keyed_name="Project" type="qry_QueryItem">A06B619D750C40BC9C82D8CD0C8B7FF9</source_id>
+     </Item>
+    </Relationships>
+   </Item>
+   <Item type="qry_QueryItem" id="69E6C5092956495C99A661C6E1AE6BB3" action="add">
+    <item_type keyed_name="Project Part" type="ItemType" name="Project Part">06BDA3A0ED4F4DA2935A431D82278A30</item_type>
+    <ref_id>0367F7446DF1455F97B3DCB000655B8A</ref_id>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</source_id>
+    <alias>Project Part</alias>
+   </Item>
+   <Item type="qry_QueryItem" id="7E19DE533600496AAF37ABB8DE045A6B" action="add">
+    <item_type keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</item_type>
+    <ref_id>7881DA2459D445EAAEBE8EAF7CFBF767</ref_id>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</source_id>
+    <alias>Part</alias>
+    <Relationships>
+     <Item type="qry_QueryItemSelectProperty" id="C497D2E9B30F4C72B322DC0EF7224E96" action="add">
+      <property_name>id</property_name>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="Part" type="qry_QueryItem">7E19DE533600496AAF37ABB8DE045A6B</source_id>
+     </Item>
+     <Item type="qry_QueryItemSelectProperty" id="0979AD6B714444878FEDA1D6FB9AE230" action="add">
+      <property_name>name</property_name>
+      <sort_order>256</sort_order>
+      <source_id keyed_name="Part" type="qry_QueryItem">7E19DE533600496AAF37ABB8DE045A6B</source_id>
+     </Item>
+     <Item type="qry_QueryItemSelectProperty" id="A5AB75CFBABC4D1F88D7AFDE608E9F46" action="add">
+      <property_name>item_number</property_name>
+      <sort_order>384</sort_order>
+      <source_id keyed_name="Part" type="qry_QueryItem">7E19DE533600496AAF37ABB8DE045A6B</source_id>
+     </Item>
+    </Relationships>
+   </Item>
+   <Item type="qry_QueryItem" id="C479B757E3A64B35B855636012A311F5" action="add">
+    <item_type keyed_name="Part BOM" type="ItemType" name="Part BOM">5E9C5A12CC58413A8670CF4003C57848</item_type>
+    <ref_id>C8F429391B484A8F9851F6A96E4A5999</ref_id>
+    <sort_order>512</sort_order>
+    <source_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</source_id>
+    <alias>Part BOM</alias>
+   </Item>
+   <Item type="qry_QueryReference" id="54D910576BFE4EF88D0D5CC4545EEE19" action="add">
+    <child_ref_id>E46FA23ED3D349EAAF81750245789A47</child_ref_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</source_id>
+   </Item>
+   <Item type="qry_QueryReference" id="4D7E996C75244CC583C9529CB0C9D519" action="add">
+    <child_ref_id>0367F7446DF1455F97B3DCB000655B8A</child_ref_id>
+    <filter_xml><![CDATA[<condition>
+	<eq>
+		<property query_items_xpath="parent::Item" name="id" />
+		<property name="source_id" />
+	</eq>
+</condition>]]></filter_xml>
+    <parent_ref_id>E46FA23ED3D349EAAF81750245789A47</parent_ref_id>
+    <ref_id>7DDCDE496FBF42F9A79516E11B4FBB5F</ref_id>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</source_id>
+   </Item>
+   <Item type="qry_QueryReference" id="461FD7E25EC444AFA4188980945D044D" action="add">
+    <child_ref_id>7881DA2459D445EAAEBE8EAF7CFBF767</child_ref_id>
+    <filter_xml><![CDATA[<condition>
+	<eq>
+		<property query_items_xpath="parent::Item" name="related_id" />
+		<property name="id" />
+	</eq>
+</condition>]]></filter_xml>
+    <parent_ref_id>0367F7446DF1455F97B3DCB000655B8A</parent_ref_id>
+    <ref_id>9E61E73BDDE24C31876921F9B4C5490E</ref_id>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</source_id>
+   </Item>
+   <Item type="qry_QueryReference" id="7447A7DDA0D242EBBD775E1A8982E4A9" action="add">
+    <child_ref_id>C8F429391B484A8F9851F6A96E4A5999</child_ref_id>
+    <filter_xml><![CDATA[<condition>
+	<eq>
+		<property query_items_xpath="parent::Item" name="id" />
+		<property name="source_id" />
+	</eq>
+</condition>]]></filter_xml>
+    <parent_ref_id>7881DA2459D445EAAEBE8EAF7CFBF767</parent_ref_id>
+    <ref_id>EB505F31A64645F992D0D9AD399019DC</ref_id>
+    <sort_order>512</sort_order>
+    <source_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</source_id>
+   </Item>
+   <Item type="qry_QueryReference" id="BFD014E607984CFAB45E647A92D3E02D" action="add">
+    <child_ref_id>7881DA2459D445EAAEBE8EAF7CFBF767</child_ref_id>
+    <filter_xml><![CDATA[<condition>
+	<eq>
+		<property query_items_xpath="parent::Item" name="related_id" />
+		<property name="id" />
+	</eq>
+</condition>]]></filter_xml>
+    <parent_ref_id>C8F429391B484A8F9851F6A96E4A5999</parent_ref_id>
+    <ref_id>B9B09A7D256D45159162F25C4E9EB556</ref_id>
+    <sort_order>640</sort_order>
+    <source_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

@@ -1,0 +1,12 @@
+<imports>
+  <package name="com.aras.innovator.solution.PLM" path="PLM\Import" />
+  <package name="com.aras.innovator.ACExtentions" path=".\">
+    <dependson name="com.aras.innovator.core" />
+    <dependson name="com.aras.innovator.cui_default" />
+    <dependson name="com.aras.innovator.cui" />
+  </package>
+  <package name="aras.labs.policies" path="Policies\Import">
+    <dependson name="com.aras.innovator.solution.PLM" />
+    <dependson name="com.aras.innovator.ACExtentions" />
+  </package>
+</imports>

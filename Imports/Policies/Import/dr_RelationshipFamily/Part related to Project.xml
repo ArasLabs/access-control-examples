@@ -1,0 +1,33 @@
+﻿<AML>
+ <Item type="dr_RelationshipFamily" id="BFBA82207A62419883627D2447B8C94B" action="add">
+  <permission_id keyed_name="dr_DerivedRelationshipFamilyActive" type="Permission">7412EE3B306C4341A8FD91134ED9D63F</permission_id>
+  <query_definition_id keyed_name="Project" type="qry_QueryDefinition">1D506C0648DE4C31B6B98483DD69BDC5</query_definition_id>
+  <name>Part related to Project</name>
+  <Relationships>
+   <Item type="dr_FamilyElement" id="F4186C4FFEF5411895B5353286734873" action="add">
+    <dr_relationship_id keyed_name="Part related to Project" type="dr_Relationship">
+     <Item type="dr_Relationship" id="952A8DAA581A4913BDFB49954D6E292D" action="add">
+      <departure_itemtype_id keyed_name="Project" type="ItemType" name="Project">02184EDAA80D499CB6EC94B159966DBE</departure_itemtype_id>
+      <description />
+      <destination_itemtype_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</destination_itemtype_id>
+      <name>Part related to Project</name>
+     </Item>
+    </dr_relationship_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Part related to Project" type="dr_RelationshipFamily">BFBA82207A62419883627D2447B8C94B</source_id>
+    <Relationships>
+     <Item type="dr_FamilyElement qry_QueryItem" id="5ED160193D544213BDEAEFF96580210A" action="add">
+      <parent_query_reference_ref_id>9E61E73BDDE24C31876921F9B4C5490E</parent_query_reference_ref_id>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="F4186C4FFEF5411895B5353286734873" type="dr_FamilyElement">F4186C4FFEF5411895B5353286734873</source_id>
+     </Item>
+     <Item type="dr_FamilyElement qry_QueryItem" id="5455FD9B66B54D31B19C6F407BCFF789" action="add">
+      <parent_query_reference_ref_id>B9B09A7D256D45159162F25C4E9EB556</parent_query_reference_ref_id>
+      <sort_order>256</sort_order>
+      <source_id keyed_name="F4186C4FFEF5411895B5353286734873" type="dr_FamilyElement">F4186C4FFEF5411895B5353286734873</source_id>
+     </Item>
+    </Relationships>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

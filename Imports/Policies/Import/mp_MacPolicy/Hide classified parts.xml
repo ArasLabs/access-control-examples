@@ -1,0 +1,24 @@
+﻿<AML>
+ <Item type="mp_MacPolicy" id="DBBB0E45A05C4B2E8A51AB9EFF4CACE9" action="add">
+  <can_delete>9B23FCEFAE9040C98DD8C64521745D11</can_delete>
+  <can_discover>9B23FCEFAE9040C98DD8C64521745D11</can_discover>
+  <can_get>9B23FCEFAE9040C98DD8C64521745D11</can_get>
+  <can_update>9B23FCEFAE9040C98DD8C64521745D11</can_update>
+  <description>Checks new flag on part "is classified" and hides it from people outside of the employees identity. You could further improve this by adding a "clearance level" property to the user Item and comparing that to a similar property on the part</description>
+  <name>Hide classified parts</name>
+  <Relationships>
+   <Item type="mp_MacCondition" action="add">
+    <condition_xml><![CDATA[<Item type="qry_QueryDefinition"><Relationships><Item type="qry_QueryItem"><item_type>D4E6378D54A3427F89BECDC52A0034D5</item_type><alias>CurrentItem</alias><ref_id>89B61DF8C9D04FA689BF3C01E934E0D7</ref_id><filter_xml><![CDATA[<condition><or><eq><property name="is_classified"/><constant>0</constant></eq><method_call><method_name>MacPolicy.CurrentUser.IsMemberOf</method_name><params><param><constant>B32BD81D1AD04207BF1E61E39A4E0E13</constant></param></params></method_call></or></condition>]]]]><![CDATA[></filter_xml></Item><Item type="qry_QueryItem"><alias>CurrentUser</alias><item_type>45E899CD2859442982EB22BB2DF683E5</item_type><ref_id>11BB8EB866DB47AC858B39845CACC733</ref_id></Item><Item type="qry_QueryReference"><child_ref_id>89B61DF8C9D04FA689BF3C01E934E0D7</child_ref_id></Item><Item type="qry_QueryReference"><child_ref_id>11BB8EB866DB47AC858B39845CACC733</child_ref_id><parent_ref_id>89B61DF8C9D04FA689BF3C01E934E0D7</parent_ref_id><ref_id>87D239DCABEC4BF5B6C6B1FDDEFD6A0C</ref_id></Item></Relationships></Item>]]></condition_xml>
+    <name>Hide classified parts</name>
+    <ref_id>9B23FCEFAE9040C98DD8C64521745D11</ref_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Hide classified parts" type="mp_MacPolicy">DBBB0E45A05C4B2E8A51AB9EFF4CACE9</source_id>
+   </Item>
+   <Item type="mp_MacPolicyControlledType" action="add">
+    <related_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Hide classified parts" type="mp_MacPolicy">DBBB0E45A05C4B2E8A51AB9EFF4CACE9</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

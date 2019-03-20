@@ -1,0 +1,33 @@
+﻿<AML>
+ <Item type="dac_DomainDefinition" id="C88415BE19A6422F9571685B2A82120E" action="add">
+  <dr_relationshipfamily_id keyed_name="Part related to Project" type="dr_RelationshipFamily">BFBA82207A62419883627D2447B8C94B</dr_relationshipfamily_id>
+  <permission_id keyed_name="dac_DomainDefinitionPreliminary" type="Permission">51AD07302B5241E08A20ED56A724410A</permission_id>
+  <name>Part related to Project</name>
+  <Relationships>
+   <Item type="dac_SubdomainPolicy" id="B45F1B9A8DCA40A49A7A976D994C3448" action="add">
+    <dr_relationship_id keyed_name="Part related to Project" type="dr_Relationship">952A8DAA581A4913BDFB49954D6E292D</dr_relationship_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Part related to Project" type="dac_DomainDefinition">C88415BE19A6422F9571685B2A82120E</source_id>
+    <Relationships>
+     <Item type="dac_SubdomainPermission" id="1025FC5524AB47A594C5B1385A986360" action="add">
+      <condition_xml><![CDATA[<condition>
+ <and>
+  <eq>
+   <property name="permission_id" query_items_xpath="parent::Item" />
+   <constant>1E63D742A5794F8DB995A5298A202C4C</constant>
+  </eq>
+  <eq>
+   <property name="current_state" />
+   <constant>7B2B10F708664A35943996FC6665823A</constant>
+  </eq>
+ </and>
+</condition>]]></condition_xml>
+      <sort_order>1</sort_order>
+      <source_id keyed_name="B45F1B9A8DCA40A49A7A976D994C3448" type="dac_SubdomainPolicy">B45F1B9A8DCA40A49A7A976D994C3448</source_id>
+      <subdomain_permission_id keyed_name="Part related to Project" type="Permission">C636712C5A004BF498C5E8DEC336CAD8</subdomain_permission_id>
+     </Item>
+    </Relationships>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>
