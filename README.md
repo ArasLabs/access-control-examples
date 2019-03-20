@@ -26,14 +26,12 @@ A collection of examples of both DAC and MAC policies.
 
 Release | Notes
 --------|--------
-
 [v1.0](https://github.com/ArasLabs/Access-Control-Examples/releases/tag/v1.0) | First release. Built and tested in 11.0 SP15
 
 #### Supported Aras Versions
 
 Project | Aras
 --------|------
-
 [v1.0](https://github.com/ArasLabs/Access-Control-Examples/releases/tag/v1.0) | 11.0 SP15
 
 ## Installation
